@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 400px;
+    height: 200px;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    background: #76afbb;
+
+}
+
+.calcul {
+    width: 20rem;
+    height: 12rem;
+    display: grid;
+    background: #586658;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        " ec ec ec ec"
+        "9 8 7 on"
+        "4 5 6 off"
+        "3 2 1 c"
+        '0 ad ml sup'
+        'div pts eq eq';
+}
+
+#sup {
+    grid-area: sup;
+}
+
+#ec {
+    grid-area: ec;
+    background: #f6f5f8e9;
+}
+
+#on {
+    grid-area: on;
+    background: #2008d3;
+}
+
+#off {
+    grid-area: off;
+    background: #2008d3;
+}
+
+#c {
+    grid-area: c;
+    background: #1aae1a;
+}
+
+#eq {
+    grid-area: eq;
+    background: #e017cc;
+}
+
+.chiffre {
+    background: #0d0f0d;
+    color: #d9d8e6;
+}
